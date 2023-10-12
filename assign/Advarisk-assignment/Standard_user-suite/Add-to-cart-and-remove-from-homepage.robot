@@ -7,6 +7,6 @@ Test Teardown    Close Browser
 *** Test Cases ***
 Add-to-cart-and-remove-from-homepage
     [Documentation]         Add-to-cart-and-remove-from-homepage
-    sign in by standard_user
+    sign in    standard_user
     Add to cart from homepage
     remove from cart

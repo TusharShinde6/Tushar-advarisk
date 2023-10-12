@@ -8,7 +8,7 @@ Test Teardown    Close Browser
 delivery-details-postalcode-validation-check
     [Documentation]         delivery-details-postalcode-validation-check
     open login page
-    sign in with problem user
+    sign in    problem_user
     Add to cart from Product page
     check cart
     Product checkout

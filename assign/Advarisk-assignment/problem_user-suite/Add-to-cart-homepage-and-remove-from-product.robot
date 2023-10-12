@@ -8,7 +8,7 @@ Test Teardown    Close Browser
 Add-to-cart-homepage-and-remove-from-product
     [Documentation]         Add-to-cart-homepage-and-remove-from-product
     open login page
-    sign in with problem user
+    sign in    problem_user
     Add to cart from homepage
     Sleep    1s
     open product

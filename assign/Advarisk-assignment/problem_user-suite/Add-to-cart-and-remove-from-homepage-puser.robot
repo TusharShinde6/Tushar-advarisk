@@ -8,6 +8,6 @@ Test Teardown    Close Browser
 Add-to-cart-and-remove-from-homepageqa
     [Documentation]         Add-to-cart-and-remove-from-homepagea
     open login page
-    sign in with problem user
+    sign in    problem_user
     Add to cart from homepage
     remove from cart

@@ -8,7 +8,7 @@ Test Teardown    Close Browser
 delivery-details-postalcode-validation-check-performance_glitch_user
     [Documentation]         delivery-details-postalcode-validation-check-performance_glitch_user
     open login page
-    sign in with performance_glitch_user
+    sign in    performance_glitch_user
     Add to cart from Product page
     check cart
     Product checkout

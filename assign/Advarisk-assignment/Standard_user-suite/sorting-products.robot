@@ -6,7 +6,7 @@ Test Teardown    Close Browser
 
 *** Test Cases ***
 sorting Product page
-    sign in by standard_user
+    sign in    standard_user
     sorting-name-A-to-Z
     sorting-name-Z-to-A
     Sort Price high-low

@@ -8,7 +8,7 @@ Test Teardown    Close Browser
 cancel-from-checkout-page
     [Documentation]         cancel-from-checkout-page
     open login page
-    sign in with problem user
+    sign in    problem_user
     Add to cart from Product page
     check cart
     Product checkout

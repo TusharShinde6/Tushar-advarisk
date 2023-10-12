@@ -8,7 +8,7 @@ Test Teardown    Close Browser
 *** Test Cases ***
 facebook page
     [Documentation]         facebook page
-    sign in by standard_user
+    sign in    standard_user
     Sleep    2s
     facebook
     Sleep    3s

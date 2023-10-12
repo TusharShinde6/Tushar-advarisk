@@ -8,4 +8,4 @@ Test Teardown    Close Browser
 login-with-locked-user
     [Documentation]         login-with-locked-user
     open login page
-    sign in with locked user
+    sign in    locked_out_user

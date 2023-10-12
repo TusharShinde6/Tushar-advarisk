@@ -10,7 +10,7 @@ Test Teardown    Close Browser
 *** Test Cases ***
 Add-to-cart-from-productpage-remove-from-Cart-page
         [Documentation]     Add-to-cart-from-productpage-remove-from-Cart-page
-        sign in by standard_user
+        sign in    standard_user
         Add to cart from Product page
         check cart
         sleep   2s

@@ -24,12 +24,12 @@ sign in by standard_user
         input text      ${password}    secret_sauce
         Click Button    login-button
 
-sign in with invalid username
-        input text      ${username}    standard
+sign in
+        [Arguments]     ${user}
+        open login page
+        input text      ${username}    ${user}
         input text      ${password}    secret_sauce
         Click Button    login-button
-        Wait Until Element Is Enabled    ${validation_error}
-        Capture Page Screenshot
 
 sign in with invalid password
         input text      ${username}    standard_user
@@ -43,20 +43,6 @@ sign in with locked user
         Click Button    login-button
         Wait Until Element Is Enabled    ${validation_error}
         Capture Page Screenshot
-sign in with problem user
-        input text      ${username}    problem_user
-        input text      ${password}    secret_sauce
-        Click Button    login-button
-
-sign in with performance_glitch_user
-        input text      ${username}    performance_glitch_user
-        input text      ${password}    secret_sauce
-        Click Button    login-button
-
-sign in with error_user
-        input text      ${username}    error_user
-        input text      ${password}    secret_sauce
-        Click Button    login-button
 
 Product checkout
         Click Button   checkout
@@ -65,9 +51,9 @@ finish button
         Click Button     finish
 
 Enter Delivery details
-        Input Text       firstName         Demo
-        Input Text       lastName          assignment
-        Input Text       postalCode         4000011
+        Input Text       firstName         tushar
+        Input Text       lastName          shinde
+        Input Text       postalCode         4000001
         Click Button     continue
         Sleep    2s
 

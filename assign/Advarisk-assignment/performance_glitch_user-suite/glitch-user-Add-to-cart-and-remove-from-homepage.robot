@@ -8,6 +8,6 @@ Test Teardown    Close Browser
 Add-to-cart-and-remove-from-homepage-performance_glitch_user
     [Documentation]         Add-to-cart-and-remove-from-homepage-performance_glitch_user
     open login page
-    sign in with performance_glitch_user
+    sign in    performance_glitch_user
     Add to cart from homepage
     remove from cart

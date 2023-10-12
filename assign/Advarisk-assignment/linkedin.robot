@@ -8,7 +8,7 @@ Test Teardown    Close Browser
 *** Test Cases ***
 linkedin page
     [Documentation]         linkedin page
-    sign in by standard_user
+    sign in    standard_user
     Sleep    2s
     linkedin
     Sleep    3s

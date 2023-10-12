@@ -7,7 +7,7 @@ Test Teardown    Close Browser
 *** Test Cases ***
 return to homepage from product page from leftside Menu All Items option
     [Documentation]         return to homepage from product page from leftside Menu All Items option
-    sign in by standard_user
+    sign in    standard_user
     Add to cart from homepage
     Sleep    1s
     open product

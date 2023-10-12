@@ -8,7 +8,7 @@ Test Teardown    Close Browser
 *** Test Cases ***
 Open-about-page
     [Documentation]         Open-about-page
-    sign in by standard_user
+    sign in    standard_user
     Sleep    2s
     about page
     Sleep    3s

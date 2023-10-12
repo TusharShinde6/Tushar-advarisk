@@ -8,7 +8,7 @@ Test Teardown    Close Browser
 Add-to-cart-from-homepage-remove-from-Cart-page
         [Documentation]     Add-to-cart-from-homepage-remove-from-Cart-page
         open login page
-        sign in with problem user
+        sign in    problem_user
         Add to cart from homepage
         check cart
         sleep   2s

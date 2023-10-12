@@ -8,7 +8,7 @@ Test Teardown    Close Browser
 delivery-details-lastname-validation-check.
     [Documentation]         delivery-details-lastname-validation-check.
     open login page
-    sign in by standard_user
+    sign in    standard_user
     Add to cart from Product page
     check cart
     Product checkout

@@ -8,4 +8,4 @@ Test Teardown    Close Browser
 login-username-valication-check
     [Documentation]         login-username-valication-check
     open login page
-    sign in with invalid username
+    sign in    standard

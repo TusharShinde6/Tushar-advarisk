@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.10.12 on linux)" generated="20231012 13:47:30.188" rpa="false" schemaversion="4">
-<suite id="s1" name="Add-to-cart-from-product-page-from-secret performance glitch user" source="/home/tushars/PycharmProjects/assign/login-suite/Standard_user-suite/Add-to-cart-from-product-page-from-secret_performance_glitch_user.robot">
-<test id="s1-t1" name="Add-to-cart-from-product-page-from-secret_performance_glitch_user" line="9">
+<robot generator="Robot 6.1.1 (Python 3.10.12 on linux)" generated="20231012 19:02:23.362" rpa="false" schemaversion="4">
+<suite id="s1" name="Delivery-Details-Firstname-Validation-Check" source="/home/tushars/PycharmProjects/assign/Advarisk-assignment/Standard_user-suite/delivery-details-firstname-validation-check.robot">
+<test id="s1-t1" name="delivery-details-firstname-validation-check" line="8">
 <kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
 <arg>browser=Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231012 13:47:30.342" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20231012 13:47:30.342" endtime="20231012 13:47:31.607"/>
+<msg timestamp="20231012 19:02:23.531" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20231012 19:02:23.531" endtime="20231012 19:02:24.705"/>
 </kw>
 <kw name="open login page" library="Keywords">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -14,139 +14,145 @@
 <arg>${Browser}</arg>
 <arg>${chromedriver}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231012 13:47:31.609" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<status status="PASS" starttime="20231012 13:47:31.608" endtime="20231012 13:47:33.231"/>
+<msg timestamp="20231012 19:02:24.707" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20231012 19:02:24.706" endtime="20231012 19:02:26.357"/>
 </kw>
-<status status="PASS" starttime="20231012 13:47:31.607" endtime="20231012 13:47:33.231"/>
+<status status="PASS" starttime="20231012 19:02:24.705" endtime="20231012 19:02:26.358"/>
 </kw>
-<kw name="sign in with performance_glitch_user" library="Keywords">
+<kw name="sign in" library="Keywords">
+<arg>standard_user</arg>
+<kw name="open login page" library="Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<arg>${chromedriver}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231012 19:02:26.360" level="INFO">Using existing browser from index 2.</msg>
+<msg timestamp="20231012 19:02:26.360" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<status status="PASS" starttime="20231012 19:02:26.359" endtime="20231012 19:02:26.427"/>
+</kw>
+<status status="PASS" starttime="20231012 19:02:26.358" endtime="20231012 19:02:26.427"/>
+</kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${username}</arg>
-<arg>performance_glitch_user</arg>
+<arg>${user}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231012 13:47:33.233" level="INFO">Typing text 'performance_glitch_user' into text field '//*[@id="user-name"]'.</msg>
-<status status="PASS" starttime="20231012 13:47:33.232" endtime="20231012 13:47:33.475"/>
+<msg timestamp="20231012 19:02:26.428" level="INFO">Typing text 'standard_user' into text field '//*[@id="user-name"]'.</msg>
+<status status="PASS" starttime="20231012 19:02:26.427" endtime="20231012 19:02:26.605"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${password}</arg>
 <arg>secret_sauce</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231012 13:47:33.476" level="INFO">Typing text 'secret_sauce' into text field '//*[@id="password"]'.</msg>
-<status status="PASS" starttime="20231012 13:47:33.476" endtime="20231012 13:47:33.626"/>
+<msg timestamp="20231012 19:02:26.605" level="INFO">Typing text 'secret_sauce' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20231012 19:02:26.605" endtime="20231012 19:02:26.770"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231012 13:47:33.627" level="INFO">Clicking button 'login-button'.</msg>
-<status status="PASS" starttime="20231012 13:47:33.626" endtime="20231012 13:47:38.786"/>
+<msg timestamp="20231012 19:02:26.771" level="INFO">Clicking button 'login-button'.</msg>
+<status status="PASS" starttime="20231012 19:02:26.770" endtime="20231012 19:02:26.955"/>
 </kw>
-<status status="PASS" starttime="20231012 13:47:33.232" endtime="20231012 13:47:38.786"/>
+<status status="PASS" starttime="20231012 19:02:26.358" endtime="20231012 19:02:26.955"/>
 </kw>
 <kw name="Add to cart from Product page" library="add-to-cart">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="item_4_title_link"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231012 13:47:38.788" level="INFO">Clicking element '//*[@id="item_4_title_link"]'.</msg>
-<status status="PASS" starttime="20231012 13:47:38.787" endtime="20231012 13:47:38.847"/>
+<msg timestamp="20231012 19:02:26.956" level="INFO">Clicking element '//*[@id="item_4_title_link"]'.</msg>
+<status status="PASS" starttime="20231012 19:02:26.956" endtime="20231012 19:02:27.069"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>add-to-cart-sauce-labs-backpack</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231012 13:47:38.847" level="INFO">Clicking button 'add-to-cart-sauce-labs-backpack'.</msg>
-<status status="PASS" starttime="20231012 13:47:38.847" endtime="20231012 13:47:38.928"/>
+<msg timestamp="20231012 19:02:27.070" level="INFO">Clicking button 'add-to-cart-sauce-labs-backpack'.</msg>
+<status status="PASS" starttime="20231012 19:02:27.069" endtime="20231012 19:02:27.152"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231012 13:47:39.929" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20231012 13:47:38.928" endtime="20231012 13:47:39.929"/>
+<msg timestamp="20231012 19:02:28.152" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231012 19:02:27.152" endtime="20231012 19:02:28.152"/>
 </kw>
-<status status="PASS" starttime="20231012 13:47:38.787" endtime="20231012 13:47:39.929"/>
+<status status="PASS" starttime="20231012 19:02:26.955" endtime="20231012 19:02:28.153"/>
 </kw>
 <kw name="check cart" library="Keywords">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${cart_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231012 13:47:39.931" level="INFO">Clicking element '//*[@id="shopping_cart_container"]'.</msg>
-<status status="PASS" starttime="20231012 13:47:39.930" endtime="20231012 13:47:39.974"/>
+<msg timestamp="20231012 19:02:28.154" level="INFO">Clicking element '//*[@id="shopping_cart_container"]'.</msg>
+<status status="PASS" starttime="20231012 19:02:28.154" endtime="20231012 19:02:28.200"/>
 </kw>
-<status status="PASS" starttime="20231012 13:47:39.930" endtime="20231012 13:47:39.974"/>
+<status status="PASS" starttime="20231012 19:02:28.153" endtime="20231012 19:02:28.200"/>
 </kw>
 <kw name="Product checkout" library="Keywords">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>checkout</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231012 13:47:39.975" level="INFO">Clicking button 'checkout'.</msg>
-<status status="PASS" starttime="20231012 13:47:39.974" endtime="20231012 13:47:40.045"/>
+<msg timestamp="20231012 19:02:28.202" level="INFO">Clicking button 'checkout'.</msg>
+<status status="PASS" starttime="20231012 19:02:28.201" endtime="20231012 19:02:28.263"/>
 </kw>
-<status status="PASS" starttime="20231012 13:47:39.974" endtime="20231012 13:47:40.045"/>
+<status status="PASS" starttime="20231012 19:02:28.201" endtime="20231012 19:02:28.263"/>
 </kw>
-<kw name="Enter Delivery details" library="Keywords">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>firstName</arg>
-<arg>Demo</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231012 13:47:40.046" level="INFO">Typing text 'Demo' into text field 'firstName'.</msg>
-<status status="PASS" starttime="20231012 13:47:40.046" endtime="20231012 13:47:40.122"/>
-</kw>
+<kw name=" Enter Delivery details without firstname" library="Keywords">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>lastName</arg>
 <arg>assignment</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231012 13:47:40.123" level="INFO">Typing text 'assignment' into text field 'lastName'.</msg>
-<status status="PASS" starttime="20231012 13:47:40.122" endtime="20231012 13:47:40.219"/>
+<msg timestamp="20231012 19:02:28.265" level="INFO">Typing text 'assignment' into text field 'lastName'.</msg>
+<status status="PASS" starttime="20231012 19:02:28.264" endtime="20231012 19:02:28.367"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>postalCode</arg>
 <arg>4000011</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231012 13:47:40.219" level="INFO">Typing text '4000011' into text field 'postalCode'.</msg>
-<status status="PASS" starttime="20231012 13:47:40.219" endtime="20231012 13:47:40.296"/>
+<msg timestamp="20231012 19:02:28.368" level="INFO">Typing text '4000011' into text field 'postalCode'.</msg>
+<status status="PASS" starttime="20231012 19:02:28.367" endtime="20231012 19:02:28.476"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>continue</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231012 13:47:40.297" level="INFO">Clicking button 'continue'.</msg>
-<status status="PASS" starttime="20231012 13:47:40.297" endtime="20231012 13:47:40.357"/>
+<msg timestamp="20231012 19:02:28.477" level="INFO">Clicking button 'continue'.</msg>
+<status status="PASS" starttime="20231012 19:02:28.476" endtime="20231012 19:02:28.538"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231012 13:47:42.358" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20231012 13:47:40.357" endtime="20231012 13:47:42.358"/>
+<msg timestamp="20231012 19:02:30.539" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231012 19:02:28.538" endtime="20231012 19:02:30.539"/>
 </kw>
-<status status="PASS" starttime="20231012 13:47:40.045" endtime="20231012 13:47:42.358"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${validation_error}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20231012 19:02:30.539" endtime="20231012 19:02:30.570"/>
 </kw>
-<kw name="finish button" library="Keywords">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>finish</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231012 13:47:42.359" level="INFO">Clicking button 'finish'.</msg>
-<status status="PASS" starttime="20231012 13:47:42.359" endtime="20231012 13:47:42.416"/>
+<kw name="Log" library="BuiltIn">
+<arg>Error: First Name is required</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231012 19:02:30.570" level="INFO">Error: First Name is required</msg>
+<status status="PASS" starttime="20231012 19:02:30.570" endtime="20231012 19:02:30.570"/>
 </kw>
-<status status="PASS" starttime="20231012 13:47:42.358" endtime="20231012 13:47:42.416"/>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231012 19:02:30.652" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231012 19:02:30.570" endtime="20231012 19:02:30.652"/>
 </kw>
-<kw name="Back to homepage" library="Keywords">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>back-to-products</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231012 13:47:42.418" level="INFO">Clicking button 'back-to-products'.</msg>
-<status status="PASS" starttime="20231012 13:47:42.417" endtime="20231012 13:47:47.502"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231012 19:02:32.653" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231012 19:02:30.652" endtime="20231012 19:02:32.653"/>
 </kw>
-<status status="PASS" starttime="20231012 13:47:42.416" endtime="20231012 13:47:47.503"/>
+<status status="PASS" starttime="20231012 19:02:28.264" endtime="20231012 19:02:32.653"/>
 </kw>
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20231012 13:47:47.503" endtime="20231012 13:47:47.655"/>
+<kw name="Close Window" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20231012 19:02:32.653" endtime="20231012 19:02:32.762"/>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231012 13:47:47.655" endtime="20231012 13:47:47.655"/>
-</kw>
-<doc>Add-to-cart-from-product-page-from-secret_performance_glitch_user</doc>
-<status status="PASS" starttime="20231012 13:47:30.341" endtime="20231012 13:47:47.655"/>
+<doc>delivery-details-firstname-validation-check</doc>
+<status status="PASS" starttime="20231012 19:02:23.530" endtime="20231012 19:02:32.762"/>
 </test>
-<status status="PASS" starttime="20231012 13:47:30.189" endtime="20231012 13:47:47.656"/>
+<status status="PASS" starttime="20231012 19:02:23.363" endtime="20231012 19:02:32.763"/>
 </suite>
 <statistics>
 <total>
@@ -155,7 +161,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Add-to-cart-from-product-page-from-secret performance glitch user">Add-to-cart-from-product-page-from-secret performance glitch user</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Delivery-Details-Firstname-Validation-Check">Delivery-Details-Firstname-Validation-Check</stat>
 </suite>
 </statistics>
 <errors>

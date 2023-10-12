@@ -11,7 +11,7 @@ Test Teardown    Close Browser
 Add-to-cart-from-productpage-remove-from-homepage-performance_glitch_user
         [Documentation]     Add-to-cart-from-productpage-remove-from-homepage-performance_glitch_user
         open login page
-        sign in with performance_glitch_user
+        sign in    performance_glitch_user
         Add to cart from Product page
         Back to homepage
         sleep   2s

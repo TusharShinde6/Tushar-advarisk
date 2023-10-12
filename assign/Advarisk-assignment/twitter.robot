@@ -8,7 +8,7 @@ Test Teardown    Close Browser
 *** Test Cases ***
 twitter page
     [Documentation]         twitter page
-    sign in by standard_user
+    sign in    standard_user
     Sleep    2s
     twitter
     Sleep    3s

@@ -8,7 +8,7 @@ Test Teardown    Close Browser
 Add-to-cart-from-product-page-from-problem_user
    [Documentation]     Add-to-cart-from-product-page-from-problem_user
     open login page
-    sign in with problem user
+    sign in    problem_user
     Add to cart from Product page
     check cart
     Product checkout

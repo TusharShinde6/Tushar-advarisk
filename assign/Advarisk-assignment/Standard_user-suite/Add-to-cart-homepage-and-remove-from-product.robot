@@ -7,7 +7,7 @@ Test Teardown    Close Browser
 *** Test Cases ***
 Add-to-cart-homepage-and-remove-from-product
     [Documentation]         Add-to-cart-homepage-and-remove-from-product
-    sign in by standard_user
+    sign in    standard_user
     Add to cart from homepage
     Sleep    1s
     open product
