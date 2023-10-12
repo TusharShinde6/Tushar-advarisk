@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.12 on linux)" generated="20231012 13:15:19.922" rpa="false" schemaversion="4">
+<suite id="s1" name="Prob-User-Delivery-Details-Firstname-Validation-Check" source="/home/tushars/PycharmProjects/assign/login-suite/problem_user-suite/prob-user-delivery-details-firstname-validation-check.robot">
+<test id="s1-t1" name="delivery-details-firstname-validation-check" line="8">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231012 13:15:20.077" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20231012 13:15:20.077" endtime="20231012 13:15:21.235"/>
+</kw>
+<kw name="open login page" library="Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<arg>${chromedriver}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231012 13:15:21.237" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20231012 13:15:21.235" endtime="20231012 13:15:22.766"/>
+</kw>
+<status status="PASS" starttime="20231012 13:15:21.235" endtime="20231012 13:15:22.766"/>
+</kw>
+<kw name="sign in with problem user" library="Keywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${username}</arg>
+<arg>problem_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231012 13:15:22.768" level="INFO">Typing text 'problem_user' into text field '//*[@id="user-name"]'.</msg>
+<status status="PASS" starttime="20231012 13:15:22.767" endtime="20231012 13:15:22.950"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231012 13:15:22.951" level="INFO">Typing text 'secret_sauce' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20231012 13:15:22.950" endtime="20231012 13:15:23.081"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231012 13:15:23.082" level="INFO">Clicking button 'login-button'.</msg>
+<status status="PASS" starttime="20231012 13:15:23.081" endtime="20231012 13:15:23.162"/>
+</kw>
+<status status="PASS" starttime="20231012 13:15:22.766" endtime="20231012 13:15:23.162"/>
+</kw>
+<kw name="Add to cart from Product page" library="add-to-cart">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="item_4_title_link"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231012 13:15:23.164" level="INFO">Clicking element '//*[@id="item_4_title_link"]'.</msg>
+<status status="PASS" starttime="20231012 13:15:23.164" endtime="20231012 13:15:23.288"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>add-to-cart-sauce-labs-backpack</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231012 13:15:23.289" level="INFO">Clicking button 'add-to-cart-sauce-labs-backpack'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231012 13:15:23.521" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231012 13:15:23.329" endtime="20231012 13:15:23.521"/>
+</kw>
+<msg timestamp="20231012 13:15:23.521" level="FAIL">Button with locator 'add-to-cart-sauce-labs-backpack' not found.</msg>
+<status status="FAIL" starttime="20231012 13:15:23.288" endtime="20231012 13:15:23.523"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231012 13:15:23.523" endtime="20231012 13:15:23.523"/>
+</kw>
+<status status="FAIL" starttime="20231012 13:15:23.163" endtime="20231012 13:15:23.523"/>
+</kw>
+<kw name="check cart" library="Keywords">
+<status status="NOT RUN" starttime="20231012 13:15:23.523" endtime="20231012 13:15:23.523"/>
+</kw>
+<kw name="Product checkout" library="Keywords">
+<status status="NOT RUN" starttime="20231012 13:15:23.523" endtime="20231012 13:15:23.523"/>
+</kw>
+<kw name=" Enter Delivery details without firstname" library="Keywords">
+<status status="NOT RUN" starttime="20231012 13:15:23.524" endtime="20231012 13:15:23.524"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231012 13:15:23.524" endtime="20231012 13:15:23.585"/>
+</kw>
+<doc>delivery-details-firstname-validation-check</doc>
+<status status="FAIL" starttime="20231012 13:15:20.076" endtime="20231012 13:15:23.586">Button with locator 'add-to-cart-sauce-labs-backpack' not found.</status>
+</test>
+<status status="FAIL" starttime="20231012 13:15:19.924" endtime="20231012 13:15:23.587"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Prob-User-Delivery-Details-Firstname-Validation-Check">Prob-User-Delivery-Details-Firstname-Validation-Check</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

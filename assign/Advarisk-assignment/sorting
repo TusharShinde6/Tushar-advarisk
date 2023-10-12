@@ -1,0 +1,25 @@
+*** Settings ***
+Resource            Keyword/Keywords.robot
+Resource            Keyword/add-to-cart.robot
+Test Setup    Open Browser   browser=Chrome
+Test Teardown    Close Browser
+
+*** Test Cases ***
+sorting-name-Z-to-A
+    [Documentation]  sorting-name-Z-to-A
+        sign in by standard_user
+        sleep   1s
+        sort        za
+        sleep       2s
+sorting-name-A-to-Z
+     [Documentation]    sorting-name-A-to-Z
+        sort        az
+        Sleep       2s
+Sort Price Low-high
+      [Documentation]    Sort Price Low-high
+        sort        lohi
+        sleep       2s
+Sort Price high-low
+       [Documentation]    Sort Price high-low
+        sort        hilo
+        Sleep       2s

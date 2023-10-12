@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.12 on linux)" generated="20231011 10:22:34.938" rpa="false" schemaversion="4">
+<suite id="s1" name="Login" source="/home/tushars/PycharmProjects/assign/login.robot">
+<test id="s1-t1" name="Open Website in Chrome" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${website}</arg>
+<arg>chrome</arg>
+<arg>${chromedriver}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231011 10:22:35.233" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20231011 10:22:35.232" endtime="20231011 10:22:39.156"/>
+</kw>
+<status status="PASS" starttime="20231011 10:22:35.231" endtime="20231011 10:22:39.157"/>
+</test>
+<status status="PASS" starttime="20231011 10:22:34.939" endtime="20231011 10:22:39.160"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

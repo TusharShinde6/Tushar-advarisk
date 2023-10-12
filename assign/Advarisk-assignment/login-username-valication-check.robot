@@ -1,0 +1,11 @@
+*** Settings ***
+Resource            Keyword/Keywords.robot
+Resource            Keyword/add-to-cart.robot
+Test Setup    Open Browser   browser=Chrome
+Test Teardown    Close Browser
+
+*** Test Cases ***
+login-username-valication-check
+    [Documentation]         login-username-valication-check
+    open login page
+    sign in with invalid username
