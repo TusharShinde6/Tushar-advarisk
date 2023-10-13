@@ -18,11 +18,6 @@ ${validation_error}      //*[@class="error-message-container error"]
 open login page
         Open Browser    ${URL}    ${Browser}  ${chromedriver}
 
-sign in by standard_user
-        open login page
-        input text      ${username}    standard_user
-        input text      ${password}    secret_sauce
-        Click Button    login-button
 
 sign in
         [Arguments]     ${user}
@@ -34,12 +29,6 @@ sign in
 sign in with invalid password
         input text      ${username}    standard_user
         input text      ${password}    secret
-        Click Button    login-button
-        Wait Until Element Is Enabled    ${validation_error}
-        Capture Page Screenshot
-sign in with locked user
-        input text      ${username}    locked_out_user
-        input text      ${password}    secret_sauce
         Click Button    login-button
         Wait Until Element Is Enabled    ${validation_error}
         Capture Page Screenshot
